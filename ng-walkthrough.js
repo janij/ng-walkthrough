@@ -19,7 +19,7 @@ angular.module('ng-walkthrough', [])
         var ngWalkthroughTapIcons = null;
 
         var template = [
-            '<div class="walkthrough-background" ng-class="{\'walkthrough-active\': isActive}" ng-show="isActive" ng-click="onCloseClicked($event)" on-touch="onCloseTouched($event)">',
+            '<div class="walkthrough-background" ng-class="{\'walkthrough-active\': isActive};{\'walkthrough-passthrough\': isPassThrough}" ng-show="isActive" ng-click="onCloseClicked($event)" on-touch="onCloseTouched($event)">',
                 '<div class="walkthrough-container walkthrough-container-transparency" ng-show="walkthroughType==\'transparency\'">',
                     '<div class="walkthrough-inner" ng-class="{\'walkthrough-top\': (!forceCaptionLocation || forceCaptionLocation==\'TOP\'), \'walkthrough-bottom\': forceCaptionLocation==\'BOTTOM\'}">',
                         '<div class="walkthrough-transclude" ng-transclude></div>',
@@ -77,6 +77,7 @@ angular.module('ng-walkthrough', [])
                 tipIconLocation: '@',
                 tipColor: '@',
                 isBindClickEventToBody: '=',
+                isPassThrough: '=',
                 onWalkthroughShow: '&',
                 onWalkthroughHide: '&'
             },

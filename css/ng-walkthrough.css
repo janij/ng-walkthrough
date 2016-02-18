@@ -25,6 +25,10 @@
     z-index: 1000;
 }
 
+.walkthrough-passthrough {
+    pointer-events: none;
+}
+
 .walkthrough-hole {
     position: absolute;
     -moz-box-shadow: 0 0 0 1997px rgba(0, 0, 0, .8);

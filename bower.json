@@ -1,8 +1,8 @@
 {
   "name": "ng-walkthrough",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "homepage": "https://github.com/souly1/ng-walkthrough",
-  "authors": [
+  "authors": [≈ç
     "Ophir Stern <souly01@gmail.com>"
   ],
   "main": "ng-walkthrough.js",
